@@ -1,28 +1,36 @@
-# Jazzicon
-## Jazzy Identicons
+# Rockicon
+## Rocky Identicons
 
-[Live Example](http://requirebin.com/?gist=64341df46d79cc72567417c022e9d0ee)
-
-Say goodbye to boring blocky identicons that look like they came out of the 70s, and replace them with jazzy, colorful collages that more likely came out of the 80's.
-
-![example](./example.png)
+It is a fork of (jazzicon)[https://github.com/danfinlay/jazzicon] with ability to set colors palette from outside.
 
 ## Installation
 
 ```
-npm install jazzicon -S
+npm install rockicon -S
 ```
 
 ## Usage
 
-Takes a pixel diameter and a javascript integer (seeds the shape), and gives you back a DOM element to use as you wish!
+Takes a color palette, a pixel diameter and a javascript integer (seeds the shape), and gives you back a DOM element to use as you wish!
 
 ```javascript
-var jazzicon = require('jazzicon')
-
+var colors = [
+	'#5bdd95',
+  '#5bddcf',
+  '#47b1ee',
+  '#3677ee',
+  '#7e27d0',
+  '#631fa3',
+  '#d025ce',
+  '#f12498',
+  '#f1611a',
+  '#f8c013',
+]
+var rockicon = require('rockicon')
+rockicon.setColorsPalette(colors)
 var body = document.querySelector('body')
 for(var i = 0; i < 60; i++) {
-  var el = jazzicon(100, Math.round(Math.random() * 10000000))
+  var el = rockicon.generateIdenticon(100, Math.round(Math.random() * 10000000))
   body.appendChild(el)
 }
 ```

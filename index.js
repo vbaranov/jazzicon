@@ -5,7 +5,10 @@ var colors = require('./colors')
 var shapeCount = 4
 var svgns = 'http://www.w3.org/2000/svg'
 
-module.exports = generateIdenticon
+module.exports = {
+  setColorsPalette,
+  generateIdenticon
+}
 
 var generator
 function generateIdenticon(diameter, seed) {
@@ -58,6 +61,16 @@ function genShape(remainingColors, diameter, i, total, svg) {
   shape.setAttributeNS(null, 'fill', fill)
 
   svg.appendChild(shape)
+}
+
+/**
+* Sets new colors palette
+* @param newColors - new array of colors to use
+*/
+function setColorsPalette(newColors) {
+  if (Array.isArray(newColors)) {
+    colors = newColors
+  }
 }
 
 function genColor(colors) {

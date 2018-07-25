@@ -1,12 +1,12 @@
 module.exports = [
-	'#01888C', // teal
-  '#FC7500', // bright orange
-  '#034F5D', // dark teal
-  '#F73F01', // orangered
-  '#FC1960', // magenta
-  '#C7144C', // raspberry
-  '#F3C100', // goldenrod
-  '#1598F2', // lightning blue
-  '#2465E1', // sail blue
-  '#F19E02', // gold
+	'#5bdd95',
+  '#5bddcf',
+  '#47b1ee',
+  '#3677ee',
+  '#7e27d0',
+  '#631fa3',
+  '#d025ce',
+  '#f12498',
+  '#f1611a',
+  '#f8c013',
 ]
