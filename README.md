@@ -1,7 +1,7 @@
 # Rockicon
 ## Rocky Identicons
 
-It is a fork of (jazzicon)[https://github.com/danfinlay/jazzicon] with ability to set colors palette from outside.
+It is a fork of [jazzicon](https://github.com/danfinlay/jazzicon) with ability to set colors palette from outside.
 
 ## Installation
 
