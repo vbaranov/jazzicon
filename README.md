@@ -15,7 +15,7 @@ Takes a color palette, a pixel diameter and a javascript integer (seeds the shap
 
 ```javascript
 var colors = [
-	'#5bdd95',
+  '#5bdd95',
   '#5bddcf',
   '#47b1ee',
   '#3677ee',
